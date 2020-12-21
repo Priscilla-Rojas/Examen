@@ -1,0 +1,129 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+
+    
+}
+body .header{
+    display: flex;
+    flex-flow: row nowrap;
+    min-height: 100vh;  
+}
+ul{
+    list-style: none;
+}
+#left, #right{
+    width: 50%;
+    padding: 40px;
+}
+body header #left{
+    width: 50%;
+    background: url(img/General-San-Martin-Municipalidad-de-General-San-Martin-4.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+#right{
+    background-color: #353535;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: start;
+    align-items: flex-end;
+}
+#left img{
+    width: 20%;
+    /* filter: invert(5); */
+}
+#right ul li #icon-menu{
+    width: 40px;
+    max-height: 35px;
+    filter: contrast(0.5);
+    margin-bottom: 20%;
+    padding: 10px;
+    background-color:gray;
+    border: 1px solid gray;
+    border-radius: 30%;
+}
+/* MENU DESPLEGABLE*/
+/* #right ul li  #menu-desplegable{
+    display: none;
+    position: absolute;
+} */
+#right ul li > #menu-desplegable{
+    width: 100%;
+    max-height: 100vh;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    position: fixed;
+    left: 50%;
+}
+#menu-desplegable ul{
+    list-style: none;
+    margin: 10px;
+}
+#menu-desplegable ul li{
+    margin-top: 10px;
+}
+#menu-desplegable ul li a{
+    text-decoration: none;
+    color: white;
+    
+}
+footer{
+    width: 100vh;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+footer #menu-footer ul li .img-redes{
+    width: 40px;
+    border-radius: 100%;
+}
+#menu-footer ul{
+    display: flex;
+    flex-flow: row wrap;
+}
+#menu-footer ul li{
+    margin: 0px 10px;
+}
+#img-foto{
+    width: 200px;
+    border-radius: 100%;
+    margin-left: 10%;
+}
+/* FIN MENU DESPLEGABLE*/
+#main h1{
+    font-size: 80px;
+    text-align: end;
+    color: black;
+    text-transform: uppercase;
+}
+#main h2{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+#reseñas{
+    display: flex;
+    justify-content:flex-end;
+    align-items: baseline;
+}
+#reseñas p{
+    width: max-content;
+    font-size: 20px;
+    margin: 0px 10px;
+    text-transform: uppercase;
+    text-align: end;
+}
