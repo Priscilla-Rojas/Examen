@@ -2,6 +2,9 @@
     margin: 0px;
     padding: 0px;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     color: white;
     text-decoration: none;
@@ -12,7 +15,7 @@ body{
 body .header{
     display: flex;
     flex-flow: row nowrap;
-    min-height: 100vh;  
+    min-height: 100vh;
 }
 ul{
     list-style: none;
@@ -23,10 +26,9 @@ ul{
 }
 body header #left{
     width: 50%;
-    background: url(img/General-San-Martin-Municipalidad-de-General-San-Martin-4.jpg);
+    background: url(img/municipalidad.jpg) no-repeat;
     background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
+    background-position: center;
 }
 #right{
     background-color: #353535;
@@ -38,85 +40,107 @@ body header #left{
 }
 #left img{
     width: 20%;
-    /* filter: invert(5); */
 }
 #right ul li #icon-menu{
     width: 40px;
     max-height: 35px;
     filter: contrast(0.5);
-    margin-bottom: 20%;
     padding: 10px;
     background-color:gray;
     border: 1px solid gray;
     border-radius: 30%;
 }
 /* MENU DESPLEGABLE*/
-#right ul li  #menu-desplegable{
+#menu-desplegable ul li #container-desplegable{
     display: none;
-    position: absolute;
 }
-#right ul li:hover > #menu-desplegable{
-    width: 100%;
-    max-height: 100vh;
+#menu-desplegable ul li:hover #container-desplegable{
+    width: 50%;
+    min-height: 100vh;
     background-color: #353535;
+    margin-right: 100px;
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: absolute;
+    top: 0px;
+    right: -70px;
+}
+#menu-desplegable ul li #container-desplegable #container-md{
+    width: 96%;
+    min-height: 100vh;
+    padding-left: 50px;
 
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
-    align-items: flex-start;
-
-    position: fixed;
-    left: 50%;
+    align-items: flex-start; 
 }
+
 #menu-desplegable ul{
+    width: 100%;
     list-style: none;
-    margin: 10px;
+    padding-left: 0
 }
 #menu-desplegable ul li{
-    margin-top: 10px;
+    padding-left: 0;
+    margin-bottom:20px;
 }
 #menu-desplegable ul li a{
-    text-decoration: none;
     color: white;
-    
+    text-decoration: none;
+    font-size: 25px;
 }
-footer{
-    width: 100vh;
-
+#container-desplegable{
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
-    padding: 30px;
-}
-footer #menu-footer ul li .img-redes{
-    width: 40px;
-    border-radius: 100%;
+    flex-flow: column wrap;
+    justify-content: space-between;
 }
 #menu-footer ul{
     display: flex;
     flex-flow: row wrap;
+
 }
-#menu-footer ul li{
-    margin: 0px 10px;
+#menu-footer p{
+    font-size: 20px;
+    border-left: 1px solid white;
+    padding-left: 10px;
 }
-#img-foto{
-    width: 200px;
+
+#container-footer {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .img-redes{
+    width: 50px;
+    height: 50px;
     border-radius: 100%;
-    margin-left: 10%;
+    margin: 0px 10px 20px;
+
+}
+footer #img-foto{
+    width: 250px;
+    border-radius: 100%;
+    margin-right: 10px;
 }
 /* FIN MENU DESPLEGABLE*/
 #main{
     margin-top: 20%;
 }
 #main h1{
-    font-size: 80px;
+    font-size: 40px;
     text-align: end;
     color: black;
     text-transform: uppercase;
 }
 #main h2{
-    font-size: 20px;
+    font-size: 30px;
     text-transform: uppercase;
 }
 #reseñas{
@@ -125,18 +149,47 @@ footer #menu-footer ul li .img-redes{
     align-items: baseline;
 }
 #reseñas p{
-    width: max-content;
-    font-size: 20px;
+    font-size: 15px;
     margin: 0px 10px;
     text-transform: uppercase;
     text-align: end;
+    line-height: 22px;
 }
 /* FIN DEL HEADER */
+/* INICIO SECCION 1 */
+
+#section1{
+    width: 100%;
+    min-height: 100vh;
+    background: url(img/liceo.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+#section1 h1{
+    font-size: 55px;
+    color: white;
+    margin-left: 50px;
+}
+#section1 p{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
 /* INICIO SECCION 2 */
 #section2{
     width: 100%;
     min-height: 100vh;
-    background-color: antiquewhite;
+    background: antiquewhite;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 
     display: flex;
     flex-flow: row wrap;
@@ -151,19 +204,45 @@ footer #menu-footer ul li .img-redes{
     width: 400px;
 }
 #datos-geograficos{
+    width: 50%;
     color: #353535;
 
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    align-items: center;   
+    align-items: center;  
 }
 #datos-geograficos h1{
-    font-size: 50px;
+    font-size: 45px;
     text-transform: uppercase;
     text-align: end;
+    margin-right: 30px;
 }
 #datos-geograficos p{
-    font-size: 20px;
+    font-size: 18px;
     text-align: end;
+    margin-right: 30px;
+}
+
+/* INICIO SECTION 3 */
+
+#section3{
+    width: 100%;
+    height: 100vh;
+
+    background: url(img/hospitalcastex.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#section3 h1{
+    padding-top: 50px;
+    padding-left: 30px;
+    color: white;
+    font-size: 50px;
+}
+#section3 p{
+    color: white;
+    font-size: 20px;
+    padding-left: 30px;
 }
