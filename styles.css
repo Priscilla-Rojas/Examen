@@ -33,7 +33,7 @@ body header #left{
 
     display: flex;
     flex-flow: column wrap;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: flex-end;
 }
 #left img{
@@ -51,13 +51,14 @@ body header #left{
     border-radius: 30%;
 }
 /* MENU DESPLEGABLE*/
-/* #right ul li  #menu-desplegable{
+#right ul li  #menu-desplegable{
     display: none;
     position: absolute;
-} */
-#right ul li > #menu-desplegable{
+}
+#right ul li:hover > #menu-desplegable{
     width: 100%;
     max-height: 100vh;
+    background-color: #353535;
 
     display: flex;
     flex-flow: column wrap;
@@ -105,6 +106,9 @@ footer #menu-footer ul li .img-redes{
     margin-left: 10%;
 }
 /* FIN MENU DESPLEGABLE*/
+#main{
+    margin-top: 20%;
+}
 #main h1{
     font-size: 80px;
     text-align: end;
@@ -125,5 +129,41 @@ footer #menu-footer ul li .img-redes{
     font-size: 20px;
     margin: 0px 10px;
     text-transform: uppercase;
+    text-align: end;
+}
+/* FIN DEL HEADER */
+/* INICIO SECCION 2 */
+#section2{
+    width: 100%;
+    min-height: 100vh;
+    background-color: antiquewhite;
+
+    display: flex;
+    flex-flow: row wrap;
+}
+#brujula, #datos-geograficos{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#section2 img{
+    width: 400px;
+}
+#datos-geograficos{
+    color: #353535;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;   
+}
+#datos-geograficos h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: end;
+}
+#datos-geograficos p{
+    font-size: 20px;
     text-align: end;
 }
