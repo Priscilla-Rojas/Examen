@@ -77,7 +77,14 @@ body header #left{
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
-    align-items: flex-start; 
+    align-items: flex-start;
+    
+    transition: all 3s linear;
+}
+.nav ul li:hover{
+    font-size: 20;
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 #menu-desplegable ul{
@@ -122,13 +129,29 @@ footer .img-redes{
     height: 50px;
     border-radius: 100%;
     margin: 0px 10px 20px;
-
+    filter: grayscale(1);
+    transition: all 1s ease-in-out;
+}
+footer .img-redes:hover{
+    filter:none;
+    transform: rotate(360deg);
+}
+footer div:nth-child(2){
+    overflow: hidden;
+    border-radius: 100%;
 }
 footer #img-foto{
     width: 250px;
     border-radius: 100%;
     margin-right: 10px;
+    overflow: hidden;
+    transition: all 2s linear;
 }
+footer #img-foto:hover{
+    transform: scale(2,2);
+    transform: grayscale(2);
+}
+
 /* FIN MENU DESPLEGABLE*/
 #main{
     margin-top: 20%;
@@ -202,6 +225,11 @@ footer #img-foto{
 }
 #section2 img{
     width: 400px;
+    cursor: pointer;
+    transition: all 5s linear;
+}
+#section2 #brujula img:hover{
+    transform: rotatez(360deg);
 }
 #datos-geograficos{
     width: 50%;
