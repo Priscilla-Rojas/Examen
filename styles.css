@@ -9,6 +9,9 @@
 html{
     scroll-behavior: smooth;
 }
+h2{
+    text-transform: uppercase;
+}
 body{
     color: black;
     text-decoration: none;

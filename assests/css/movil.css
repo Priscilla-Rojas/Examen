@@ -26,7 +26,11 @@ body header .right{
 }
 .menu-desplegable{
     width: 40px;
+    padding-top: 5px;
     padding-right: 20px;
+}
+.menu-desplegable ul li:hover .container-desplegable {
+    width: 100%;
 }
 .main p,
 .main h2{
@@ -76,7 +80,8 @@ body header .right{
     margin: 10px auto;
 }
 .section2 .brujula{
-    width: 75%;
+    width: 200px;
+    height: 200px;
     margin: 5px auto;
 }
 .section2 img{
@@ -87,4 +92,60 @@ body header .right{
 
 .datos-geograficos .boton{
     display: none;
+}
+.section3{
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.section3 div:first-child{
+    width: 100%;
+}
+.section1 div h2,
+.datos-geograficos h2,
+.section3 h2{
+    font-size: 2rem;
+    padding: 10px;
+    text-align: center;
+}
+.section1 div p,
+.datos-geograficos p,
+.section3 p{
+    font-size: 1rem;
+    padding: 5px;
+    text-align: center;
+}
+.section3 div:last-child{
+    width: 100px;
+    margin: 20px auto;
+}
+.section3 div:last-child a{
+    display: inline-block;
+    width: 100%;
+}
+.section3 p{
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.253);
+}
+
+
+@media (max-width: 386px) {
+    .main h1{
+        font-size: 2rem;
+    }
+    .right{
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+    .menu-desplegable{
+        margin-bottom: 40px;
+    }
+    .reseñas{
+        flex-flow: column nowrap;
+    }
+    
+
 }
