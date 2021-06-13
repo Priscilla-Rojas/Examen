@@ -1,0 +1,16 @@
+body header .left {
+    width: 60%;
+}
+.right{
+    margin: 0;
+    padding: 5px;
+}
+main{
+    margin-top: 0;
+}
+.main h2{
+    font-size: 1.2rem;
+}
+.main p{
+    font-size: 0.6rem;
+}
