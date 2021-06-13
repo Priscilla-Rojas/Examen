@@ -1,0 +1,12 @@
+body header .left{
+    width: 40%;
+}
+.right{
+    width: 60%;
+}
+.menu-desplegable ul li:hover .container-desplegable{
+    width: 60%;
+}
+section1 p{
+    width: 65%;
+}

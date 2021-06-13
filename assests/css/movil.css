@@ -1,0 +1,90 @@
+body .header{
+    width: 100%;
+    overflow: hidden;
+    flex-flow: column-reverse nowrap;
+}
+body header .left,
+body header .right{
+    width: 100%;
+}
+body header .left{
+    height: 30vh;
+}
+body header .right{
+    height: 70vh;
+    padding: 0;
+    flex-flow: column nowrap;
+}
+.main{
+    margin-top: 10px;
+}
+.main h1{
+    text-align: center;
+}
+.reseñas{
+    margin-top: 10px;
+}
+.menu-desplegable{
+    width: 40px;
+    padding-right: 20px;
+}
+.main p,
+.main h2{
+    width: 100%;
+    text-align: center;
+}
+.section1{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.section1 div{
+    width: 80%;
+}
+.section1 div h2,
+.section1 div p{
+    width: 100%;
+    margin: 0;
+    padding: 10px 5px;
+    text-align: center;
+}
+.section1 .boton {
+    width: 30%;
+    margin: 10px auto;
+}
+.section2{
+    height: 100vh;
+    flex-flow: column-reverse nowrap;
+    overflow: hidden;
+}
+.section2 .brujula,
+.section2 .datos-geograficos{
+    width: 100%;
+    height: 50vh;
+}
+.datos-geograficos{
+    width: 100%;
+}
+.datos-geograficos div{
+    width: 90%;
+    margin: 0 auto;
+}
+.datos-geograficos h2,
+.datos-geograficos p{
+    width: 100%;
+    text-align: center;
+    margin: 10px auto;
+}
+.section2 .brujula{
+    width: 75%;
+    margin: 5px auto;
+}
+.section2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.datos-geograficos .boton{
+    display: none;
+}
