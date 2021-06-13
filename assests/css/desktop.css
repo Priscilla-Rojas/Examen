@@ -14,3 +14,15 @@ main{
 .main p{
     font-size: 0.6rem;
 }
+.brujula{
+    width: 40%;
+}
+.datos-geograficos{
+    width: 60%;
+}
+.section2 img{
+    width: 100%;
+}
+.datos-geograficos h2{
+    font-size: 2.5rem;
+}
